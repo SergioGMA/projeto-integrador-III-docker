@@ -1,0 +1,4 @@
+venv/
+people/__pycache__/
+people/migrations/
+*.pyc
