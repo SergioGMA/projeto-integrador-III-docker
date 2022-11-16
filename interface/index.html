@@ -18,7 +18,7 @@
                     <ul class="nav justify-content-center">
                     <ul class="nav justify-content-center">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="http://localhost/formulario.html">Realizar Cadastro</a>
+                            <a class="nav-link active" aria-current="page" href="http://localhost:8080/formulario.html">Realizar Cadastro</a>
                         </li>
                     </ul>
                 </div>
@@ -44,6 +44,9 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Idoso</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://localhost:8080/resultado.html">Todos</a>
                             </li>
                     </ul>
                 </div>
@@ -87,15 +90,21 @@
         </div>
 
         <div class="newtext">
+            <!-- Exemplo para aumentar a fonte -->
+            <button onClick="fonte('a');">+</button>
+            <button onClick="fonte('d');">-</button>
+
             <h4>Um sopro de esperança</h4>
-            <p>Cada vez que o anúncio recebe uma visualização ou um compartilhamento é um sopro de esperança,
-               para a família aflita, que está em busca do desaparecido. Já vimos acontecer de pessoas serem
-               encontradas pelo Facebook depois de ser postada uma foto da mesma na rede social. Geralmente
-               os jovens desaparecidos, que são encontrados saem de casa sem compromisso, mas deixam pistas
-               no face em conversa com amigos. Isso é muito importante para o resgate da vítima. Se você tem
-               alguém desaparecido e quer uma busca mais abrangente, publique nos desaparecidos do Facebook,
-               com certeza o resultado será imediato e as possibilidades de encontrar essa pessoa aumenta 
-               muito.</p>
+            <main>
+            <p class="acessibilidade">Cada vez que o anúncio recebe uma visualização ou um compartilhamento é
+               um sopro de esperança, para a família aflita, que está em busca do desaparecido. Já vimos 
+               acontecer de pessoas serem encontradas pelo Facebook depois de ser postada uma foto da mesma
+               na rede social. Geralmente os jovens desaparecidos, que são encontrados saem de casa sem 
+               compromisso, mas deixam pistas no face em conversa com amigos. Isso é muito importante para
+               o resgate da vítima. Se você tem alguém desaparecido e quer uma busca mais abrangente, publique
+               nos desaparecidos do Facebook, com certeza o resultado será imediato e as possibilidades de
+               encontrar essa pessoa aumenta muito.</p>
+            </main>
         </div>
 
         <footer class="bg-dark text-info">
@@ -106,7 +115,18 @@
         </footer>
 
     </div>
+     <!-- Codigo do Vlibras Widget -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
     <script type="text/javascript" src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
 </body>
 </html>
