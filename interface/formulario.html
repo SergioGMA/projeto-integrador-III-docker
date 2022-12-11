@@ -10,72 +10,76 @@
 </head>
 <body>
 
-    <div class="form">
+    <div class="form" action="" method="post">
         <div class="texto">
             <h3 class="text-form">Cadastro de Pessoas Desaparecidas ou Perdidas</h3>
-            <form>
+            <form onsubmit="cadastraUsuario()">
                 <h4 class="text-form">Dados do Cadastrador</h4>
                 <div class="form-group">
                     <label>Nome Completo</label>
-                    <input type="email" class="form-control" placeholder="Nome">
+                    <input type="text" id="nomeCadastrador" class="form-control" placeholder="Nome" placeholder="Nome Completo" required>
                 </div>
 
                 <div class="form-group">
                     <label>Endereço de Email</label>
-                    <input type="email" class="form-control" placeholder="Email">
+                    <input type="email" id="email" class="form-control" placeholder="Email" placeholder="Endereço de Email" required>
                 </div>
 
                 <div class="form-group">
                     <label>Telefone</label>
-                    <input type="email" class="form-control" placeholder="Telefone">
+                    <input type="text" id="telefone" class="form-control" placeholder="Telefone" placeholder="Telefone" required>
                 </div>
 
                 <div class="form-group">
                     <label>Cidade</label>
-                    <input type="email" class="form-control" placeholder="Cidade">
+                    <input type="text" id="cidade" class="form-control" placeholder="Cidade" placeholder="Cidade" required>
                 </div>
 
 
                 <h4 class="text-form">Dados do Desaparecido</h4>
                 <div class="form-group">
                     <label>Nome Completo</label>
-                    <input type="email" class="form-control"
-                        placeholder="Nome">
+                    <input type="text" id="nomeDesaparecido" class="form-control"
+                        placeholder="Nome" placeholder="Nome Completo" required>
                 </div>
 
                 <div class="form-group">
                     <label>Sexo</label>
-                    <input type="email" class="form-control"
-                        placeholder="Masculino/Feminino">
+                    <input type="text" id="sexo" class="form-control"
+                        placeholder="Masculino/Feminino" placeholder="Sexo" required>
                 </div>
 
                 <div class="form-group">
                     <label>Data de Nascimento</label>
-                    <input type="email" class="form-control"
-                        placeholder="Ano/Mes/Dia">
+                    <input type="text" id="dataNascimento" class="form-control"
+                        placeholder="Ano-Mes-Dia">
                 </div>
 
                 <div class="form-group mt-2">
                     <label>Local Visto Pela Última Vez</label>
-                    <textarea class="form-control"></textarea>
+                    <textarea id="vistoUltimo" class="form-control" placeholder="Local Visto Pela Última Vez" required></textarea>
                 </div>
 
                 <div class="form-group mt-2">
                     <label>Caracteristicas Físicas</label>
-                    <textarea class="form-control"></textarea>
+                    <textarea id="CaracFisica" class="form-control" placeholder="Caracteristicas Físicas" required></textarea>
                 </div>
 
                 <div class="form-group">
                     <label>Anexar Imagem</label><br>
-                    <input type="file" class="form-control-file">
+                    
+                    <input type="file" name="Arquivo" accept="image/*" id ="imagem" enctype="multipart/form-data" multiple>
+                    <img>
                 </div>
 
-                <a class="btn btn-primary" href="http://localhost:8080/index.html" role="button">Retornar</a>
-                <button type="button" class="btn btn-primary">Enviar Cadastro</button>
+                <a class="btn btn-primary" href="http://localhost/index.html" role="button">Retornar</a>
+                <button type="submit" id="submit" class="btn btn-primary">Enviar Cadastro</button>
+            </form>
         </div>
     </div>
-
-    <script type="text/javascript" src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
 </body>
 </html>

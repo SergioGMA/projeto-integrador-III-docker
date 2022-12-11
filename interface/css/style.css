@@ -58,3 +58,35 @@ p {
 .btn {
     margin-top: 20px;
 }
+
+.container-a {
+    display: flex;
+    align-items: center;
+    border:1px solid black;
+    margin-top: 25px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    
+    
+}
+
+#img1, #img2 {
+    border:1px solid black;
+    
+}
+
+.p_img {
+    
+    color: blue;
+    height: 400px;
+    margin: 20px;
+    line-height: 0.7;
+    max-height: 260px;
+    
+}
+
+#text1,#text2,#text3,#text4,#text5,#text6,#text7,#text8,#text9,#text10,#text11,#text12,#text13,#text14,#text15,#text16,#text17,#text18 {
+    display: flex;
+}
+

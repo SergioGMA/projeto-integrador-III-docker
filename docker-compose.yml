@@ -4,7 +4,7 @@ services:
   sever:
     image: nginx
     ports:
-      - 8080:80
+      - 80:80
     volumes:
       - ./interface:/usr/share/nginx/html
   web:
